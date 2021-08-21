@@ -1,2 +1,3 @@
-gem 'exception_notification'
+source 'https://rubygems.org'
 gem 'slack-notifier'
+gem 'clockwork'
