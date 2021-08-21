@@ -1,7 +1,7 @@
 require "slack-notify"
 require 'clockwork'
 # ここに、slackにメッセージを送る処理を書き込む。
-sample = SlackNotify::Client.new(webhook_url: 'https://hooks.slack.com/services/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')
+sample = SlackNotify::Client.new(webhook_url: 'https://hooks.slack.com/services/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')
 
 sample.notify("Hello There!")
 
@@ -9,7 +9,7 @@ require 'active_support/time'
 
 module Clockwork
 
-  sample = SlackNotify::Client.new(webhook_url: 'https://hooks.slack.com/services/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')
+  sample = SlackNotify::Client.new(webhook_url: 'https://hooks.slack.com/services/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')
 
   every(3.minutes, 'Hello There!') do
   sample.notify("Hello There!")
