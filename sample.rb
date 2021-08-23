@@ -2,8 +2,8 @@ require "slack-notify"
 require 'clockwork'
 client = SlackNotify::Client.new(
   webhook_url: "https://hooks.slack.com/services/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",
-  channel: "#development",
-  username: "mybot",
+  channel: "#general",
+  username: "dikaemanchidi",
   icon_url: "http://mydomain.com/myimage.png",
   icon_emoji: ":shipit:",
   link_names: 1
