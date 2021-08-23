@@ -1,6 +1,13 @@
 require "slack-notify"
 require 'clockwork'
-# ここに、slackにメッセージを送る処理を書き込む。
+client = SlackNotify::Client.new(
+  webhook_url: "https://hooks.slack.com/services/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",
+  channel: "#development",
+  username: "mybot",
+  icon_url: "http://mydomain.com/myimage.png",
+  icon_emoji: ":shipit:",
+  link_names: 1
+)
 sample = SlackNotify::Client.new(webhook_url: 'https://hooks.slack.com/services/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')
 
 sample.notify("Hello There!")
@@ -17,3 +24,5 @@ end
   # ここに、「どれくらいの周期で処理をするのか？」というClockworkのメソッドを記述します
   # ここに、slackで一定時間ごとに送りたい処理と設定を書き込みます
 end
+
+
